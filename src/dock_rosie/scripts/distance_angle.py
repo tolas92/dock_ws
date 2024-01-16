@@ -28,9 +28,11 @@ class MarkerParameters:
             robot.transforms[i].transform.rotation.w,
         )
 
+        # Assuming the camera is at the back and looking towards the back
         self.Yaw_odom = math.atan2(2 * (q0 * q1 + q2 * q3), 1 - 2 * (q1 * q1 + q2 * q2)) * 180 / PI
         self.Pitch_odom = math.asin(2 * (q0 * q2 - q3 * q1)) * 180 / PI
         self.Roll_odom = math.atan2(2 * (q0 * q3 + q2 * q1), 1 - 2 * (q0 * q0 + q1 * q1)) * 180 / PI
+     
 
     def compute_dist_angle(self, ar_marker, i):
         Yaw_odom_rad = self.Yaw_odom * PI / 180
@@ -74,7 +76,7 @@ def odomangle_callback(robot):
             ARmarker.compute_odom_angle(robot, i)
 
         if (
-            robot.transforms[0].header.frame_id == "camera"
+            robot.transforms[0].header.frame_id == "camera_link_optical"
             and robot.transforms[0].child_frame_id == "ar_marker"
         ):
             ARmarker.compute_dist_angle(robot, i)
