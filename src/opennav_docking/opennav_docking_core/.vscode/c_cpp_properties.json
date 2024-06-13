@@ -1,0 +1,37 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/tolasing/main_ws/dev_ws/install/motor_control/include/**",
+        "/home/tolasing/main_ws/dev_ws/install/ros2_aruco_interfaces/include/**",
+        "/home/tolasing/main_ws/dev_ws/install/prototype/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/opennav_docking/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/opennav_docking_core/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/opennav_docking_bt/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/opennav_docking_msgs/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/isaac_ros_tensor_list_interfaces/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/isaac_ros_pointcloud_interfaces/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/isaac_ros_nova_interfaces/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/isaac_ros_nitros_bridge_interfaces/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/isaac_ros_bi3d_interfaces/include/**",
+        "/home/tolasing/main_ws/dock_ws/install/isaac_ros_apriltag_interfaces/include/**",
+        "/opt/ros/humble/include/**",
+        "/home/tolasing/main_ws/dock_ws/src/isaac_ros_common/isaac_ros_common/include/**",
+        "/home/tolasing/main_ws/dock_ws/src/opennav_docking/opennav_docking/include/**",
+        "/home/tolasing/main_ws/dock_ws/src/opennav_docking/opennav_docking_bt/include/**",
+        "/home/tolasing/main_ws/dock_ws/src/opennav_docking/opennav_docking_core/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
