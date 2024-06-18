@@ -1,0 +1,8 @@
+<?xml version='1.0' ?>
+<launch>
+<include file ="$(find-pkg-share prototype)/launch/robotmodel_launch.py"/>
+
+<include file ="$(find-pkg-share prototype)/launch/sensors_launch.py"/>
+
+<!--<include file ="$(find-pkg-share prototype)/launch/navigation_launch.py"/>-->
+</launch>

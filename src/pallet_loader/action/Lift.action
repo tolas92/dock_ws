@@ -1,0 +1,10 @@
+# Request
+string lift
+
+
+---
+# Result
+bool done
+---
+# Feedback
+string status
